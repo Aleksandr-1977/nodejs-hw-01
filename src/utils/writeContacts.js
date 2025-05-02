@@ -1,5 +1,4 @@
 import { PATH_DB } from '../constants/contacts.js';
-// import { readContacts } from './readContacts.js';
 import fs from 'node:fs/promises';
 
 export const writeContacts = async (updatedContacts) => {
@@ -9,4 +8,12 @@ export const writeContacts = async (updatedContacts) => {
     console.error('Error:', error);
   }
 };
-writeContacts();
+// writeContacts([
+//   {
+//     id: '49e75826-140e-4148-82a7-27b98b1b5f28',
+//     name: 'Jana Kerluke',
+//     phone: '1-423-375-0192',
+//     email: 'Ronny_Pagac@hotmail.com',
+//     job: 'Customer Marketing Representative',
+//   },
+// ]);
